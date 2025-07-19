@@ -36,3 +36,11 @@ This calculator supports all basic arithmetic operations and has keyboard-like i
 
 ## 📂 Project Structure
 
+web-calculator/
+│
+├── index.html          # Main HTML file
+├── style.css           # CSS styling
+├── script.js           # Calculator logic (JavaScript)
+├── image/
+│   └── screenshot.png  # App screenshot
+└── README.md           # Project documentation
