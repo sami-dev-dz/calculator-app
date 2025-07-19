@@ -37,13 +37,15 @@ This calculator supports all basic arithmetic operations and has keyboard-like i
 ## 📂 Project Structure
 
 ```
-web-calculator/
+calculator-app/
 │
-├── index.html          # Main HTML file  
-├── style.css           # CSS styling  
-├── script.js           # Calculator logic (JavaScript)  
+├── calculator.html         # Main HTML file
+├── css/
+│   └── calculator.css      # CSS styling
+├── js/
+│   └── calculator.js       # Calculator logic (JavaScript)
 ├── image/
-│   └── screenshot.png  # App screenshot  
-└── README.md           # Project documentation  
+│   └── screenshot.png      # App screenshot
+└── README.md               # Project documentation
 ```
 
