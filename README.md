@@ -35,12 +35,4 @@ This calculator supports all basic arithmetic operations and has keyboard-like i
 ---
 
 ## 📂 Project Structure
-calculator-app/
-├── calculator.html # Main HTML file for the calculator
-├── README.md # Project documentation
-├── css/
-│ └── calculator.css # Styles (layout, colors, responsiveness)
-├── js/
-│ └── calculator.js # JavaScript logic and math.js integration
-└── image/
-└── screenshot.png # Screenshot image used in the README
+
