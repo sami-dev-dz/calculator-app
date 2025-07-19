@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.position {
+    max-width: 380px;
+    background: #1c1c1e;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.place-calc input {
+    width: 100%;
+    height: 80px;
+    background: #000;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+    text-align: right;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.button-calc {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 1fr));
+    gap: 20px;
+}
+
+.button-calc span,
+.dispaly-button span {
+    padding: 20px;
+    border-radius: 16px;
+    background: #2e2e2e;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    min-height: 64px;
+    transition: all 0.15s ease;
+    box-shadow: 0 8px 0 #1a1a1a;
+    transform: perspective(500px) translateZ(0);
+}
+
+.button-calc span:hover,
+.dispaly-button span:hover {
+    transform: perspective(500px) translateZ(4px);
+}
+
+.button-calc span:active,
+.dispaly-button span:active {
+    transform: perspective(500px) translateZ(0) translateY(4px);
+    box-shadow: 0 2px 0 #1a1a1a;
+}
+
+.dispaly-button {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.dispaly-button span.taille-button {
+    border-radius: 32px;
+    justify-content: flex-start;
+    padding-left: 28px;
+}
+
+span.active {
+    background: linear-gradient(to bottom, #ff9500, #cc7a00);
+    color: white;
+    box-shadow: 0 8px 0 #b36200;
+}
+
+span.active:hover {
+    background: linear-gradient(to bottom, #ffb143, #cc9000);
+    transform: perspective(500px) translateZ(4px);
+}
+
+span.active:active {
+    transform: perspective(500px) translateZ(0) translateY(4px);
+    box-shadow: 0 2px 0 #b36200;
+}
+
+span.button-action {
+    background: linear-gradient(to bottom, #d1d1d1, #a6a6a6);
+    color: #1c1c1e;
+    box-shadow: 0 8px 0 #7a7a7a;
+}
+
+span.button-action:hover {
+    background: linear-gradient(to bottom, #e4e4e4, #b8b8b8);
+    transform: perspective(500px) translateZ(4px);
+}
+
+span.button-action:active {
+    transform: perspective(500px) translateZ(0) translateY(4px);
+    box-shadow: 0 2px 0 #7a7a7a;
+}

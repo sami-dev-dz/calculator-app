@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11.11.0/lib/browser/math.js"></script>
+
+    <link rel="stylesheet" href="./css/calculator.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="position">
+      <div class="place-calc">
+        <input type="text" id="inputCalculatrice" />
+      </div>
+
+      <div class="button-calc">
+        <span class="button-action" data-value="AC">AC</span>
+        <span class="button-action" data-value="DEL">DEL</span>
+        <span class="button-action" data-value="%">%</span>
+        <span class="active" data-value="/">/</span>
+
+        <span data-value="7">7</span>
+        <span data-value="8">8</span>
+        <span data-value="9">9</span>
+        <span class="active" data-value="*">*</span>
+
+        <span data-value="4">4</span>
+        <span data-value="5">5</span>
+        <span data-value="6">6</span>
+        <span class="active" data-value="-">-</span>
+
+        <span data-value="1">1</span>
+        <span data-value="2">2</span>
+        <span data-value="3">3</span>
+        <span class="active" data-value="+">+</span>
+
+        <div class="dispaly-button">
+          <span class="taille-button" data-value="0">0</span>
+          <span data-value=".">.</span>
+          <span class="active" data-value="=">=</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/calculator.js"></script>
+  </body>
+</html>
